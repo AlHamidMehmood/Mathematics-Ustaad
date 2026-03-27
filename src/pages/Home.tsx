@@ -60,12 +60,14 @@ export default function Home() {
             className="relative hidden lg:block"
           >
             <div className="aspect-[4/5] bg-academic-accent/5 border border-academic-gray relative overflow-hidden group">
-              {/* Subtle visual representation of "Academic Zen" */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 border-2 border-academic-accent/10 rounded-full animate-pulse" />
-                <div className="absolute w-48 h-48 border border-academic-accent/20 rotate-45" />
-                <div className="absolute w-32 h-32 border-2 border-academic-accent/30 rounded-full" />
-              </div>
+              {/* Professional teacher in online classroom portrait */}
+              <img 
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" 
+                alt="Dr. Elias Thorne"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-academic-accent/10 mix-blend-multiply group-hover:opacity-0 transition-opacity" />
               <div className="absolute bottom-12 left-12 right-12">
                 <div className="glass-card p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                   <span className="font-serif italic text-academic-accent text-3xl block mb-2">∫</span>
@@ -166,7 +168,12 @@ export default function Home() {
       <section id="instructor-section" className="py-20 lg:py-32 px-6 lg:px-12 bg-academic-bg">
         <div className="max-w-5xl mx-auto text-center">
           <div id="instructor-avatar" className="w-24 h-24 lg:w-32 lg:h-32 bg-academic-accent/10 rounded-full mx-auto mb-8 lg:mb-12 flex items-center justify-center overflow-hidden border border-academic-gray">
-             <span className="font-serif italic text-academic-accent text-4xl lg:text-5xl">T</span>
+             <img 
+               src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=400" 
+               alt="Dr. Elias Thorne"
+               className="w-full h-full object-cover"
+               referrerPolicy="no-referrer"
+             />
           </div>
           <span id="instructor-label" className="font-sans text-[10px] font-bold tracking-widest uppercase text-academic-accent mb-4 block">
             Lead Instructor

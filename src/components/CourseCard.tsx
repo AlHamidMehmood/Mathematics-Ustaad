@@ -20,10 +20,14 @@ export default function CourseCard({ course }: { course: Course }) {
             {course.category}
           </span>
         </div>
-        {/* Placeholder for course image */}
-        <div className="w-full h-full bg-academic-accent/10 flex items-center justify-center">
-           <span className="font-serif italic text-academic-accent/20 text-4xl">∫</span>
-        </div>
+        {/* Professional online classroom image */}
+        <img 
+          src={`https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=800&seed=${course.id}`} 
+          alt={course.title}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-academic-ink/10 group-hover:bg-transparent transition-colors" />
       </div>
 
       <div className="p-8 flex flex-col flex-grow">

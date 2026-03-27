@@ -101,7 +101,13 @@ export default function CourseDetail() {
                   />
                 ) : (
                   <>
-                    <div className="absolute inset-0 bg-academic-accent/5" />
+                    <img 
+                      src={`https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=1000&seed=${course.id}`} 
+                      alt={course.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-academic-ink/40" />
                     <button 
                       id="play-teaser-button"
                       onClick={() => setIsPlaying(true)}

@@ -39,18 +39,15 @@ export default function Philosophy() {
               </div>
             </div>
           </div>
-          <div id="visual-first-visual" className="relative aspect-square bg-academic-accent/5 flex items-center justify-center overflow-hidden">
+          <div id="visual-first-visual" className="relative aspect-square bg-academic-accent/5 flex items-center justify-center overflow-hidden border border-academic-gray">
+             <img 
+               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000" 
+               alt="Collaborative Online Learning"
+               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+               referrerPolicy="no-referrer"
+             />
+             <div className="absolute inset-0 bg-academic-accent/10 mix-blend-multiply group-hover:opacity-0 transition-opacity" />
              <div id="visual-first-pattern" className="absolute inset-0 geometric-pattern opacity-20" />
-             <motion.div 
-               id="visual-first-animation"
-               animate={{ rotate: 360 }}
-               transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-               className="w-64 h-64 border border-academic-accent/20 rounded-full flex items-center justify-center"
-             >
-               <div id="animation-circle-inner" className="w-48 h-48 border-2 border-academic-accent/40 rounded-full" />
-               <div id="animation-line-h" className="absolute w-full h-px bg-academic-accent/10" />
-               <div id="animation-line-v" className="absolute h-full w-px bg-academic-accent/10" />
-             </motion.div>
           </div>
         </div>
 
